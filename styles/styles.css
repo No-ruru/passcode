@@ -19,7 +19,8 @@ body {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 210px;
+    width: 200px;
+    height: 220px;
     padding: 10px;
     text-align: center;
 }
@@ -32,15 +33,16 @@ body {
 .title {
     margin: 10px 0;
     color: #333;
+    text-decoration: none;
 }
 
 .description-btn {
     position: absolute; /* ボタンを絶対位置で配置 */
-    right: 10px; /* 右からの距離 */
-    bottom: 10px; /* 下からの距離 */
-    width: 20px; /* ボタンの幅 */
-    height: 20px; /* ボタンの高さ（幅と等しくする） */
-    background-color: #007BFF;
+    bottom: 20px; /* カードの底辺からの距離を指定 */
+    right: 20px; /* カードの右端からの距離を指定 */
+    width: 30px; /* ボタンの幅 */
+    height: 30px; /* ボタンの高さ（幅と等しくする） */
+    background-color: #F30100;
     color: white;
     border: none;
     border-radius: 5px; /* 丸みを少し付ける */
@@ -53,8 +55,9 @@ body {
     padding: 0; /* 余白を無効化して中央配置を保つ */
 }
 
+
 .description-btn:hover {
-    background-color: #0056b3;
+    background-color: #B1063A;
 }
 
 /* モーダルウィンドウのスタイル */
