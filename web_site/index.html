@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Games Site "ぱすこーど"</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <!-- 犬 -->
+        <div class="card">
+            <a href="cards/dogs/link.html" target="_blank">
+                <img src="cards/dogs/image.png" alt="画像1">
+                <h3 class="title">犬</h3>
+            </a>
+            <button class="description-btn" data-description-url="cards/dogs/description.txt">説明を表示</button>
+        </div>
+        <!-- 海 -->
+        <div class="card">
+            <a href="cards/sea/link.html" target="_blank">
+                <img src="cards/sea/image.png" alt="画像2">
+                <h3 class="title">海</h3>
+            </a>
+            <button class="description-btn" data-description-url="cards/sea/description.txt">説明を表示</button>
+        </div>
+        <!-- 花 -->
+        <div class="card">
+            <a href="cards/flowers/link.html" target="_blank">
+                <img src="cards/flowers/image.png" alt="画像3">
+                <h3 class="title">花</h3>
+            </a>
+            <button class="description-btn" data-description-url="cards/flowers/description.txt">説明を表示</button>
+        </div>
+        <!-- Hello World ! -->
+        <div class="card">
+            <a href="cards/Hello_World/link.html" target="_blank">
+                <img src="cards/Hello_World/image.png" alt="画像4">
+                <h3 class="title">Hello World !</h3>
+            </a>
+            <button class="description-btn" data-description-url="cards/Hello_World/description.txt">説明を表示</button>
+        </div>
+    </div>
+
+    <!-- モーダルウィンドウ -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p id="modal-description">ここに画像の詳細な説明が表示されます。</p>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
