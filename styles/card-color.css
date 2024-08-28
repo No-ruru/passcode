@@ -1,0 +1,59 @@
+/* 犬のカード */
+.card-dog {
+    background-color: #ffffcb; /* カードの背景色を設定 */
+}
+
+.btn-dog::before,
+.btn-dog::after {
+    background-color: #b1063a; /* 十字ボタンの色を設定 */
+}
+
+.btn-dog:hover::before,
+.btn-dog:hover::after {
+    background-color: #7a0528; /* ホバー時のボタンの色 */
+}
+
+/* 海のカード */
+.card-sea {
+    background-color: #e6f7ff; /* カードの背景色を設定 */
+}
+
+.btn-sea::before,
+.btn-sea::after {
+    background-color: #007BFF; /* 十字ボタンの色を設定 */
+}
+
+.btn-sea:hover::before,
+.btn-sea:hover::after {
+    background-color: #0056b3; /* ホバー時のボタンの色 */
+}
+
+/* 花*/
+.card-flowers {
+    background-color: #c9facb; /* カードの背景色を設定 */
+}
+
+.btn-flowers::before,
+.btn-flowers::after {
+    background-color: #f6fd76; /* 十字ボタンの色を設定 */
+}
+
+.btn-flowers:hover::before,
+.btn-flowers:hover::after {
+    background-color: #cbd164; /* ホバー時のボタンの色 */
+}
+
+/*Hello World*/
+.card-Hello_World {
+    background-color: #f2f2f2; /* カードの背景色を設定 */
+}
+
+.btn-Hello_World::before,
+.btn-Hello_World::after {
+    background-color: #5f5f5f; /* 十字ボタンの色を設定 */
+}
+
+.btn-Hello_World:hover::before,
+.btn-Hello_World:hover::after {
+    background-color: #1c1c1c; /* ホバー時のボタンの色 */
+}
