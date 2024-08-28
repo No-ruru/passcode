@@ -15,7 +15,7 @@ body {
 
 .card {
     position: relative;
-    background-color: white;
+    background-color: #e0ebaf;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -30,7 +30,7 @@ body {
 
 /* カードホバー時のスタイル */
 .card:hover {
-    transform: translateY(-5px); /* 少し浮き上がる効果 */
+    transform: translateY(-2px); /* 少し浮き上がる効果 */
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* 影を大きくして浮いている感じを強調 */
 }
 
@@ -62,7 +62,7 @@ body {
 .description-btn::after {
     content: '';
     position: absolute;
-    background-color: #F30100; /* 十字の色 */
+    background-color: #38b48b; /* 十字の色 */
     border-radius: 2px; /* 十字の端を少し丸める */
 }
 
@@ -84,7 +84,7 @@ body {
 
 .description-btn:hover::before,
 .description-btn:hover::after {
-    background-color: #B1063A; /* ホバー時の色変更 */
+    background-color: #006e54; /* ホバー時の色変更 */
 }
 
 /* モーダルウィンドウのスタイル */
