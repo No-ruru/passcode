@@ -14,15 +14,24 @@ body {
 }
 
 .card {
-    position: relative; /* ボタンの位置調整のために相対位置を指定 */
+    position: relative;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
-    height: 220px;
+    width: 200px; /* カードの固定幅 */
+    height: 220px; /* カードの固定高さ */
     padding: 10px;
     text-align: center;
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* スムーズな浮遊感を与えるための遷移 */
+    flex-grow: 0; /* カードが成長しないように設定 */
+    flex-shrink: 0; /* カードが縮小しないように設定 */
+}
+
+/* カードホバー時のスタイル */
+.card:hover {
+    transform: translateY(-5px); /* 少し浮き上がる効果 */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* 影を大きくして浮いている感じを強調 */
 }
 
 .card img {
@@ -37,27 +46,45 @@ body {
 }
 
 .description-btn {
-    position: absolute; /* ボタンを絶対位置で配置 */
+    position: absolute;
     bottom: 20px; /* カードの底辺からの距離を指定 */
     right: 20px; /* カードの右端からの距離を指定 */
-    width: 30px; /* ボタンの幅 */
-    height: 30px; /* ボタンの高さ（幅と等しくする） */
-    background-color: #F30100;
-    color: white;
+    width: 40px; /* ボタンのサイズ */
+    height: 40px; /* ボタンのサイズ */
+    background-color: transparent;/*ボタン自体の背景を透明にする*/
     border: none;
-    border-radius: 5px; /* 丸みを少し付ける */
     cursor: pointer;
     transition: background-color 0.3s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* テキストを中央に配置 */
-    font-size: 18px; /* テキストサイズを調整 */
-    padding: 0; /* 余白を無効化して中央配置を保つ */
+    padding: 0;
 }
 
+.description-btn::before,
+.description-btn::after {
+    content: '';
+    position: absolute;
+    background-color: #F30100; /* 十字の色 */
+    border-radius: 2px; /* 十字の端を少し丸める */
+}
 
-.description-btn:hover {
-    background-color: #B1063A;
+.description-btn::before {
+    width: 100%; /* 横の棒の幅をボタンと同じにする */
+    height: 15px; /* 横の棒の高さ */
+    top: 50%; /* 中央に配置 */
+    left: 0;
+    transform: translateY(-50%); /* 完全に中央に配置するための調整 */
+}
+
+.description-btn::after {
+    height: 100%; /* 縦の棒の高さをボタンと同じにする */
+    width: 15px; /* 縦の棒の幅 */
+    left: 50%; /* 中央に配置 */
+    top: 0;
+    transform: translateX(-50%); /* 完全に中央に配置するための調整 */
+}
+
+.description-btn:hover::before,
+.description-btn:hover::after {
+    background-color: #B1063A; /* ホバー時の色変更 */
 }
 
 /* モーダルウィンドウのスタイル */
@@ -103,7 +130,26 @@ body {
     white-space: pre-wrap; /* 改行を含むテキストをそのまま表示 */
 }
 
-@media (max-width: 768px) {
+/* メディアクエリを使用してカードのレイアウトを調整 */
+@media (max-width: 1200px) {
+    .gallery {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .gallery {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
     .gallery {
         flex-direction: column;
         align-items: center;
