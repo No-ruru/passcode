@@ -1,3 +1,18 @@
+/* 説明のカード */
+.card-passcode-ex {
+    background-color: #ebebeb; /* カードの背景色を設定 */
+}
+
+.btn-passcode-ex::before,
+.btn-passcode-ex::after {
+    background-color: #3d3d3d; /* 十字ボタンの色を設定 */
+}
+
+.btn-passcode-ex:hover::before,
+.btn-passcode-ex:hover::after {
+    background-color: #212121; /* ホバー時のボタンの色 */
+}
+
 /* 犬のカード */
 .card-dog {
     background-color: #ffffcb; /* カードの背景色を設定 */
