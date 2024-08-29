@@ -5,6 +5,49 @@ body {
     padding: 0;
 }
 
+/* ヘッダーのスタイル */
+.site-header {
+    background-color: #ffffff; /* ヘッダーの背景色 */
+    color: rgb(63, 63, 63); /* ヘッダー内のテキストの色 */
+    padding: 0px 0px; /* 上下の余白 */
+    position: sticky; /* ヘッダーをスクロール時に固定 */
+    top: 0;
+    width: 100%;
+    z-index: 10; /* ヘッダーを他の要素の上に表示 */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* 中央揃えのための最大幅 */
+    margin: 0 auto; /* 中央揃え */
+    padding: 0 20px; /* 左右の余白 */
+}
+
+.nav-menu ul {
+    list-style: none; /* リストの箇条書きスタイルを削除 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu ul li {
+    margin-left: 20px; /* メニュー項目間の間隔 */
+}
+
+.nav-menu ul li a {
+    color: rgb(63, 63, 63); /* リンクの色 */
+    text-decoration: none; /* リンクの下線を削除 */
+    font-weight: bold;
+    transition: color 0.3s ease; /* ホバー時のスムーズな色変更 */
+}
+
+.nav-menu ul li a:hover {
+    color: #f39c12; /* ホバー時のリンクの色 */
+}
+
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
