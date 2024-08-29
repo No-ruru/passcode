@@ -36,4 +36,14 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.style.display = 'none';
         }
     });
+
+    // ホームリンクをクリックしたときにページの一番上にスクロール
+    const homeLink = document.getElementById('home-link');
+    homeLink.addEventListener('click', function(event) {
+        event.preventDefault(); // デフォルトのアンカーリンクの動作を無効化
+        window.scrollTo({ 
+            top: -45, 
+            behavior: 'smooth' 
+        }); // ページの一番上にスムーズスクロール
+    });
 });
