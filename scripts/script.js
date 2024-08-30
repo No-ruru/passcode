@@ -46,4 +46,34 @@ document.addEventListener('DOMContentLoaded', function() {
             behavior: 'smooth' 
         }); // ページの一番上にスムーズスクロール
     });
+
+    const tagButtons = document.querySelectorAll('.tags'); // タグボタンを取得
+    // タグボタンをクリックしたときの処理
+    tagButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const tag = this.textContent.trim(); // ボタンのテキストを取得
+            filterCards(tag); // カードをフィルタリング
+        });
+    });
+
+    // カードのフィルタリング
+    function filterCards(tag) {
+        const cards = document.querySelectorAll('.card'); // 全てのカードを取得
+
+        cards.forEach(card => {
+            const cardTag = card.querySelector('.tags').textContent.trim(); // カードのタグを取得
+            if (cardTag === tag || tag === '#すべて') {
+                card.style.display = 'block'; // 一致するカードを表示
+            } else {
+                card.style.display = 'none'; // 一致しないカードを非表示
+            }
+        });
+    }
+
+    const resetButton = document.getElementById('reset-filter');
+    if (resetButton) {
+        resetButton.addEventListener('click', function() {
+            filterCards('#すべて'); // 全てのカードを表示
+        });
+    }
 });
