@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>無料ゲームサイト "ぱすこーど"</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/card-color.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h2>ぱすこーど</h2>
+            <nav class="nav-menu">
+                <ul>
+                    <li><button id="home-link">ホーム</button></li>
+                    <li><button id="reset-filter">すべて</button></li>
+                    <li><button id="filter-list">絞り込み</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 絞り込みのメニュー -->
+    <div id="filter-menu" class="filter-menu"></div>
+
+    <!-- カード一覧 -->
+    <div class="gallery">
+        <!-- このサイトの説明 -->
+        <div class="card card-passcode-ex">
+            <a href="cards/passcode-ex/link.html" target="_blank">
+                <img src="cards/passcode-ex/image.png" alt="ぱすこーど">
+                <h3 class="title">使い方</h3>
+            </a>
+            <button class="tags tags-passcode-ex" type="button">#その他</button>
+            <div class="description-btn description-btn-shadow"></div>
+            <button class="description-btn btn-passcode-ex" data-description-url="cards/passcode-ex/description.txt"></button>
+        </div>
+        <!-- Hello World ! -->
+        <div class="card card-Hello_World">
+            <a href="cards/Hello_World/link.html" target="_blank">
+                <img src="cards/Hello_World/image.png" alt="画像4">
+                <h3 class="title">Hello World !</h3>
+            </a>
+            <button class="tags tags-Hello_World">#パズル</button>
+            <div class="description-btn description-btn-shadow"></div>
+            <button class="description-btn btn-Hello_World" data-description-url="cards/Hello_World/description.txt"></button>
+        </div>
+        <!-- タイプマジック -->
+        <div class="card card-type_magic">
+            <a href="cards/type_magic/link.html" target="_blank">
+                <img src="cards/type_magic/image.png" alt="画像1">
+                <h3 class="title">Type Magic</h3>
+            </a>
+            <button class="tags tags-type_magic">#タイピング</button>
+            <div class="description-btn description-btn-shadow"></div>
+            <button class="description-btn btn-type_magic" data-description-url="cards/type_magic/description.txt"></button>
+        </div>
+        <!-- どーっちだ -->
+        <div class="card card-which">
+            <a href="cards/which/link.html" target="_blank">
+                <img src="cards/which/image.png" alt="画像2">
+                <h3 class="title">どーっちだ</h3>
+            </a>
+            <button class="tags tags-which">#パズル</button>
+            <div class="description-btn description-btn-shadow"></div>
+            <button class="description-btn btn-which" data-description-url="cards/which/description.txt"></button>
+        </div>
+        <!-- 5分で脱出 -->
+        <div class="card card-escape_5m">
+            <a href="cards/escape_5m/link.html" target="_blank">
+                <img src="cards/escape_5m/image.png" alt="画像3">
+                <h3 class="title">5分で脱出</h3>
+            </a>
+            <button class="tags tags-escape_5m">#アクション</button>
+            <div class="description-btn description-btn-shadow"></div>
+            <button class="description-btn btn-escape_5m" data-description-url="cards/escape_5m/description.txt"></button>
+        </div>
+        <!-- 縄跳び -->
+        <div class="card card-rope_jumping">
+            <a href="cards/rope_jumping/link.html" target="_blank">
+                <img src="cards/rope_jumping/image.png" alt="大縄跳び">
+                <h3 class="title">大縄跳び</h3>
+            </a>
+            <button class="tags tags-rope_jumping">#リズム</button>
+            <div class="description-btn description-btn-shadow"></div>
+            <button class="description-btn btn-rope_jumping" data-description-url="cards/rope_jumping/description.txt"></button>
+        </div>
+    </div>
+
+    <!-- モーダルウィンドウ -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p id="modal-description">ここに画像の詳細な説明が表示されます。</p>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

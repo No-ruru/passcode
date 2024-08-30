@@ -1,0 +1,143 @@
+/* 説明のカード */
+.card-passcode-ex {
+    background-color: #ebebeb; /* カードの背景色を設定 */
+}
+
+.tags-passcode-ex{
+    background-color: #3d3d3d;
+    color: #ededed;
+}
+
+.tags-passcode-ex:hover{
+    background-color: #212121;
+}
+
+.btn-passcode-ex::before,
+.btn-passcode-ex::after {
+    background-color: #3d3d3d; /* 十字ボタンの色を設定 */
+}
+
+.btn-passcode-ex:hover::before,
+.btn-passcode-ex:hover::after {
+    background-color: #212121; /* ホバー時のボタンの色 */
+}
+
+/*Hello World*/
+.card-Hello_World {
+    background-color: #f2f2f2; /* カードの背景色を設定 */
+}
+
+.tags-Hello_World{
+    background-color: #5f5f5f;
+    color: #f2f2f2;
+}
+
+.tags-Hello_World:hover{
+    background-color: #1c1c1c;
+}
+
+.btn-Hello_World::before,
+.btn-Hello_World::after {
+    background-color: #5f5f5f; /* 十字ボタンの色を設定 */
+}
+
+.btn-Hello_World:hover::before,
+.btn-Hello_World:hover::after {
+    background-color: #1c1c1c; /* ホバー時のボタンの色 */
+}
+
+/* タイプマジックのカード */
+.card-type_magic {
+    background-color: #ffffcb; /* カードの背景色を設定 */
+}
+
+.tags-type_magic{
+    background-color: #b1063a;
+    color: #ffffcb;
+}
+
+.tags-type_magic:hover{
+    background-color: #7a0528;
+}
+
+.btn-type_magic::before,
+.btn-type_magic::after {
+    background-color: #b1063a; /* 十字ボタンの色を設定 */
+}
+
+.btn-type_magic:hover::before,
+.btn-type_magic:hover::after {
+    background-color: #7a0528; /* ホバー時のボタンの色 */
+}
+
+/* どーっちだのカード */
+.card-which {
+    background-color: #e6f7ff; /* カードの背景色を設定 */
+}
+
+.tags-which{
+    background-color: #007BFF;
+    color: #e6f7ff;
+}
+
+.tags-which:hover{
+    background-color: #0056b3;
+}
+
+.btn-which::before,
+.btn-which::after {
+    background-color: #007BFF; /* 十字ボタンの色を設定 */
+}
+
+.btn-which:hover::before,
+.btn-which:hover::after {
+    background-color: #0056b3; /* ホバー時のボタンの色 */
+}
+
+/* ５分で脱出*/
+.card-escape_5m {
+    background-color: #a181d9; /* カードの背景色を設定 */
+}
+
+.tags-escape_5m{
+    background-color: #ffffff;
+    color: #a181d9;
+}
+
+.tags-escape_5m:hover{
+    background-color: #f1f1f1;
+}
+
+.btn-escape_5m::before,
+.btn-escape_5m::after {
+    background-color: #ffffff; /* 十字ボタンの色を設定 */
+}
+
+.btn-escape_5m:hover::before,
+.btn-escape_5m:hover::after {
+    background-color: #f1f1f1; /* ホバー時のボタンの色 */
+}
+
+/* 縄跳びのカード */
+.card-rope_jumping {
+    background-color: #af5e55; /* カードの背景色を設定 */
+}
+
+.tags-rope_jumping{
+    background-color: #e2a67d;
+    color: #af5e55;
+}
+
+.tags-rope_jumping:hover{
+    background-color: #bb8a69;
+}
+
+.btn-rope_jumping::before,
+.btn-rope_jumping::after {
+    background-color: #e2a67d; /* 十字ボタンの色を設定 */
+}
+
+.btn-rope_jumping:hover::before,
+.btn-rope_jumping:hover::after {
+    background-color: #bb8a69; /* ホバー時のボタンの色 */
+}
