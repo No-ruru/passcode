@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; 
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
@@ -37,18 +37,21 @@ body {
 }
 
 .nav-menu ul li {
-    margin-left: 16px; /* メニュー項目間の間隔 */
+    margin-left: 12px; /* メニュー項目間の間隔 */
 }
 
-.nav-menu ul li a {
+.nav-menu ul li button{
     color: rgb(63, 63, 63); /* リンクの色 */
+    background-color: transparent;/*ボタン自体の背景を透明にする*/
+    border: none;
     text-decoration: none; /* リンクの下線を削除 */
     font-weight: bold;
     font-size: 13px;
     transition: color 0.3s ease; /* ホバー時のスムーズな色変更 */
+    padding: 0;
 }
 
-.nav-menu ul li a:hover {
+.nav-menu ul li button:hover {
     color: #f39c12; /* ホバー時のリンクの色 */
 }
 
@@ -93,6 +96,26 @@ body {
     text-decoration: none;
 }
 
+.tags {
+    position: absolute; /* 絶対位置を設定 */
+    bottom: 23px; /* カードの底辺からの距離 */
+    left: 23px; /* カードの左端からの距離 */
+    font-size: 14px; /* フォントサイズ */
+    color: #333; /* テキストカラー */
+    background-color: rgba(255, 255, 255, 0.7); /* 背景色と透明度 */
+    padding: 5px; /* 内側の余白 */
+    border: none; /* ボタンの枠線を削除 */
+    border-radius: 4px; /* 角を丸くする */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影を追加 */
+    margin-right: 5px; /* ボタン間のスペース */
+    cursor: pointer; /* カーソルをポインターに変更 */
+}
+
+.tags:hover{
+    background-color: rgba(255, 255, 255, 0.9); /* ホバー時の背景色を変更 */
+}
+
+
 .description-btn {
     position: absolute;
     bottom: 20px; /* カードの底辺からの距離を指定 */
@@ -128,6 +151,11 @@ body {
     left: 50%; /* 中央に配置 */
     top: 0;
     transform: translateX(-50%); /* 完全に中央に配置するための調整 */
+}
+
+.description-btn-shadow::before,
+.description-btn-shadow::after{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影を追加 */
 }
 
 .description-btn:hover::before,
