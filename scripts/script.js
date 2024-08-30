@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // タグボタンの生成
-    const tags = ['#すべて', '#アクション', '#パズル', '#タイピング' '#その他']; // タグの例
+    const tags = ['#すべて', '#アクション', '#パズル', '#タイピング', '#その他']; // タグの例
     tags.forEach(tag => {
         const tagButton = document.createElement('button');
         tagButton.textContent = tag;
