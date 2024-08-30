@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     homeLink.addEventListener('click', function(event) {
         event.preventDefault(); // デフォルトのアンカーリンクの動作を無効化
         window.scrollTo({ 
-            top: -45, 
+            top: 0, 
             behavior: 'smooth' 
         }); // ページの一番上にスムーズスクロール
     });
