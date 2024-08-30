@@ -57,7 +57,7 @@ body {
 
 .filter-menu {
     display: none; /* 初期状態では非表示 */
-    position: absolute;
+    position: fixed;
     top: 56px; /* ヘッダーの下に表示 */
     right: 0px;
     background-color: #ffffff;
